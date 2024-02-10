@@ -601,6 +601,13 @@ li:hover {
   width: 900px;
   height: 250px;
   border: 5px solid black;
+  border-radius: 40px;
+  transition: 0.3s;
+  margin: 200px;
+}
+
+#player-card:hover {
+  transform: scale(1.05)
 }
 
 #player-info {
@@ -625,6 +632,7 @@ li:hover {
   width: 20px;
   border-radius: 100%;
   margin: 20px;
+  margin-bottom: 8px;
 }
 
 #player-percentile {
@@ -680,19 +688,7 @@ li:hover {
   border-radius: 15px;
 }
 
-#player-rank-change-green {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  color: green;
-  justify-content: center;
-  align-items: center;
-  margin: 27px;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-#player-rank-change-green {
+#player-rank-change-red {
   display: flex;
   flex-direction: row;
   font-size: 30px;
@@ -715,4 +711,5 @@ li:hover {
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 30px;
 }

@@ -7,7 +7,7 @@ import Train from "../components/Train.js"
 
 export default function PlayersPage() {
   return (
-    <><Train/></>
+    <div styles="align-self: center"><Train/></div>
   );
 }
 
