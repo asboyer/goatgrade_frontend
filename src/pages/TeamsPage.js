@@ -1,13 +1,13 @@
 import React, { useState,useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PlayerList from "../components/PlayerList.js"
+import TeamsList from "../components/TeamsList.js"
 import { generatePath, useNavigate } from "react-router-dom"
 import M from './NBA.PNG';
 import git from './git.png'
 
 
 
-export default function PlayersPage() {
+export default function TeamsPage() {
   
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function PlayersPage() {
         <input
           type="text"
           id="PL-search-bar"
-          placeholder="Search players..."
+          placeholder="Search teams..."
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{ width: '100%', padding: '10px', marginBottom: '20px' }}
         />
@@ -31,19 +31,10 @@ export default function PlayersPage() {
         </div>
       </div>
       <div id="players-page-content">
-        <h1>2024 Player Rankings</h1>
+        <h1>2024 Team Rankings</h1>
         <div styles="align-self: center">
-          <PlayerList searchTerm={searchTerm}/>
+          <TeamsList searchTerm={searchTerm}/>
         </div>
-      </div>
-      <div id="Legend">
-        <h1>Ranking Percentiles</h1>
-        <p styles="color: purple">84% - 100%</p>
-        <p styles="color: blue">68% - 83%</p>
-        <p styles="color: green">51% - 67%</p>
-        <p styles="color: yellow">34% - 50%</p>
-        <p styles="color: orange">18% - 33%</p>
-        <p styles="color: red">0% - 17%</p>
       </div>
     </div>
   );

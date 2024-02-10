@@ -16,6 +16,9 @@
   border-bottom: 2px outset rgb(216, 216, 216);
   box-shadow: 4px 3px rgb(232, 232, 232);
   padding-top: 10px;
+  background-color: rgb(254, 255, 246);
+  font-family: "Arial";
+  font-weight: bold;
 }
 
 #aboutHeading {
@@ -37,7 +40,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  background-color: rgb(254, 255, 246);
+  background-color: #ffe8cf;
 }
 #M {
   width: 55px;
@@ -174,8 +177,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  height: 50px;
-  width: 120px;
+  height: 70px;
+  width: 150px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 22px;
@@ -560,6 +563,10 @@ li:hover {
 
 #aboutBody h1 {
   text-align: center;
+  font-size: 60px;
+  margin: 30px;
+  font-weight: 500;
+  font-family: "Consolas";
 }
 
 #aboutContent {
@@ -568,19 +575,25 @@ li:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 0;
   overflow: hidden;
 }
 
 #aboutTrain {
-  width: 400px;
+  width: 750px;
 }
 
 #aboutText {
-  height: 330px;
-  width: 600px;
+  text-indent: 30px;
+  height: 800px;
+  width: 750px;
   margin: 50px;
-  font-size: 25px;
+  font-size: 29px;
+  font-family: "consolas"
+}
 
+#bold-about {
+  color: #9c0207;
 }
 
 #madeBy {
@@ -599,11 +612,12 @@ li:hover {
   flex-direction: row;
   justify-content: space-between;
   width: 900px;
-  height: 250px;
+  height: 200px;
   border: 5px solid black;
   border-radius: 40px;
   transition: 0.3s;
-  margin: 200px;
+  margin: 35px;
+  background-color: #fac882;
 }
 
 #player-card:hover {
@@ -628,8 +642,6 @@ li:hover {
 }
 
 #player-image {
-  height: 20px;
-  width: 20px;
   border-radius: 100%;
   margin: 20px;
   margin-bottom: 8px;
@@ -646,7 +658,7 @@ li:hover {
 }
 
 #player-name {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   padding: 10px;
 }
@@ -665,7 +677,7 @@ li:hover {
 }
 
 #player-team-description {
-  font-size: 35px;
+  font-size: 25px;
   padding: 10px;
 }
 
@@ -712,4 +724,183 @@ li:hover {
   align-items: center;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 30px;
+}
+/**
+  Individual Team component styling
+**/
+
+#team-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 900px;
+  height: 250px;
+  border: 5px solid black;
+  border-radius: 40px;
+  transition: 0.3s;
+  margin: 35px;
+  background-color: #fac882;
+}
+
+#team-card:hover {
+  transform: scale(1.05)
+}
+
+#team-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#team-image {
+  border-radius: 100%;
+  margin: 20px;
+  margin-bottom: 8px;
+}
+
+#team-percentile {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#team-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#team-name {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+#team-standing {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#team-rank-numbers {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#team-rank-change-green {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: green;
+  justify-content: center;
+  align-items: center;
+  margin: 27px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#team-rank-change-red {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 27px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#team-rank {
+  width: 130px;
+  height: 130px;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 30px;
+}
+
+/**
+  Player List component styling
+**/
+
+#wholePL {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 90vh;
+}
+
+#PL-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  background-color: #fff6d4; 
+  max-height: 69vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 60vw;
+  padding-top: 20px;
+  margin: 50px;
+  border: 3px double black;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+#PL-search-bar {
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  max-width: 800px;
+  height: 40px;
+  border-radius: 12px;
+  position: absolute;
+  left: 34%;
+} 
+
+#PL-cant-find {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+  font-size: 30px;
+  color: grey;
+}
+
+#WholeApp {
+  overflow: hidden;
+}
+
+#whole-players-page h1 {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#whole-players-page {
+  background-color: white;
+
+}
+
+#homeHeading{
+  background-color: #faab50;
+
+}
+
+#Legend {
+  
 }

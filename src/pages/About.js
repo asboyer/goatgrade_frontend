@@ -1,11 +1,11 @@
 import { useState } from "react";
 import logo from './logo.svg'
 import { useNavigate } from "react-router-dom";
-import M from './M.png';
+import M from './NBA.PNG';
 import git from './git.png'
 import linkedIn from './linkedIn.png'
 import mart from "./mart-modified.png"
-import train from "./train-stations-map-2020.jpg"
+import playerDisplay from "./playerDisplay.png"
 
 
 
@@ -18,29 +18,33 @@ export default function Home({setPropColor}) {
             <div id="aboutHeading">
                 <div id="homeIcon">
                     <img id="M" src={M} /> 
-                    <div id="homeMartaTracker">MARTA Tracker</div>
+                    <div id="homeMartaTracker">GOAT.grade()</div>
                     <div id="homeAboutMe"><p onClick={() => {navigate("/");}}>Back Home</p>
                     </div>
                 </div>
                 <div id="homeLinks">
-                    <a href="https://github.com/DanielChee" target="none"><img id="git" src={git} /> </a>
-                    <a href="https://www.linkedin.com/in/daniel-ayoung-chee/" target="none"><img id="linkedIn" src={linkedIn} /> </a>
+                    <a href="https://github.com/DanielChee/gg_fronted" target="none"><img id="git" src={git} /> </a>
                 </div>
             </div>
 
-            <h1>About MARTA</h1>
+            <h1>About Us</h1>
 
             <div id="aboutContent">
                 <div id="aboutImage">
-                    <img id="aboutTrain" src={train} />
+                    <img id="aboutTrain" src={playerDisplay} />
                 </div>
                 <div id="aboutText">
-                    MARTA (Metropolitan Atlanta Rapid Transit Authority) is the nation’s ninth largest transit system and the largest of its kind 
-                    in the Southeast that provides bus, rail, and paratransit service.Their mission 
-                    is to advocate and provide safe, multi-modal transit
-                    services that advance prosperity, connectivity and equity for a more livable 
-                    region. MARTA's train system has four distinct lines, with gold and red 
-                    spanning north to south, and blue and green spanning east to west.
+                    <p>
+                        Welcome to our sports analytics platform, founded by Andrew Boyer, Daniel Ayoung-Chee, and Joshua Thomas. Our mission is simple: <b id="bold-about">to revolutionize sports rankings and MVP predictions through the power of data science and machine learning.</b>
+                    </p>
+
+                    <p>
+                        Andrew specializes in backend API work and data manipulation, ensuring our data is accurate and reliable. Daniel leads our design and frontend development, crafting a user-friendly website that makes complex data accessible. Joshua applies machine learning algorithms to predict future MVPs, turning statistical analysis into insightful forecasts.
+                    </p>
+
+                    <p>
+                        Together, we provide a comprehensive analysis and ranking of players and teams, coupled with forward-looking predictions about the next sports legends. Join us as we blend technology and sports to uncover new insights and celebrate the future of sporting excellence.
+                    </p>
                 </div>
             </div>
         </div>

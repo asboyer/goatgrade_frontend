@@ -18,12 +18,12 @@ export default function Home({setPropColor}) {
             <div id="homeHeading">
                 <div id="homeIcon">
                     <img id="M" src={M} /> 
-                    <div id="homeMartaTracker">GOAT Grade</div>
+                    <div id="homeMartaTracker">GOAT.grade()</div>
                     <div id="homeAboutMe"><p onClick={() => {navigate("/about");}}>About</p>
                     </div>
                 </div>
                 <div id="homeLinks">
-                    <a href="https://github.com/DanielChee" target="none"><img id="git" src={git} /> </a>
+                    <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
                 </div>
             </div>
 
