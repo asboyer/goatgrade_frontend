@@ -247,12 +247,13 @@
 #homeFooterComponents {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 600px;
   height: 120px;
   font-weight: 300px;
   margin-top: 20px;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 #mart {
