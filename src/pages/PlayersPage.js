@@ -13,7 +13,7 @@ export default function PlayersPage() {
   const navigate = useNavigate();
   return (
     <div id="whole-players-page">
-      <div id="homeHeading">
+      <div id="homeHeading" class="hh">
                 <div id="homeIcon">
                     <a href="/"> <img id="M" src={M} /></a> 
                 </div>

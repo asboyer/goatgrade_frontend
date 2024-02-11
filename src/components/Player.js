@@ -24,7 +24,9 @@ export default function Player({ player }) {
         <div id="player-card" style={boxShadowStyle}>
             <div id="player-info">
                 <div id="player-plaque">
+                        <a href={player.link}>
                         <img id="player-image" src={player.img} style={{ width: '40px', height: 'auto' }}/>
+                        </a>
                     <div id="player-percentile">
                         {player.grade}
                     </div>
@@ -36,6 +38,7 @@ export default function Player({ player }) {
                     </div>
                     <div id="player-team">
                         <div id="player-team-image">
+
                             <img src={player.team_img} style={{ width: '20px', height: 'auto' }}/>
                         </div>
                         <div id="player-team-description">
