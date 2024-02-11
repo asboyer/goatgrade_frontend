@@ -35,7 +35,7 @@ export default function PlayerList({ searchTerm }) {
 
     return (
         <div id="wholePL">
-            <div id="PL-container" style={{ maxWidth: '1000px' }}>
+            <div id="PL-container">
                 {loading ? (
                     <div id="PL-cant-find"> Loading 300+ players...</div>
                 ) : filteredData.length === 0 ? (

@@ -21,11 +21,9 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route index element={<Home/>} />
-          <Route path={"playerspage"} element={<PlayersPage/>} />
-          <Route path={"teamspage"} element={<TeamsPage/>} />
-          <Route path={"mvppage"} element={<MvpPage />} />
-          <Route path={"about"} element={<About />} />
-
+          <Route path={"players"} element={<PlayersPage/>} />
+          <Route path={"teams"} element={<TeamsPage/>} />
+          <Route path={"mvp"} element={<MvpPage />} />
         </Routes>
     </BrowserRouter>
     </div>

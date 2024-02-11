@@ -15,11 +15,11 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px outset rgb(216, 216, 216);
-  padding-top: 10px;
+/*  padding-top: 10px;*/
   background-color: #E39200;
   font-family: "Arial";
   font-weight: bold;
-  height: 120px;
+/*  height: 120px;*/
   box-shadow: 0px 0px 30px #925E00;
 }
 
@@ -36,32 +36,20 @@
 }
 
 #homeBody {
-  overflow: hidden;
-  font-family: "Arial";
-  font-weight: bold;
-  display: flex;
+  overflow: scroll;
+  font-family: monospace;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
   background-color: #ffe8cf;
-}
-#M {
-  width: 55px;
-  margin-top: 10px;
-  margin-left: 25px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  transition: 0.3s;
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 #M:hover {
   transform: scale(1.1);
 }
 
-#git, #linkedIn {
-  width: 60px;
+#M, #git, #linkedIn {
+  width: 20px;
   margin: 15px;
   margin-left: 25px;
   transition: 0.3s;
@@ -81,12 +69,13 @@
   margin-right: 20px;
   padding: 20px;
   padding-right: 30px;
+  padding-left: 15px;
 }
 
 #homeIcon {
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #homeLinks {
@@ -105,23 +94,22 @@
 }
 
 #homeAboutMe p {
-  font-size: 28px;
+  font-size: 20px;
   border-radius: 7px;
   margin-left: 20px;
-  padding: 13px;
+/*  padding: 13px;*/
   transition: 0.3s;
 }
 
 #homeAboutMe p:hover {
   cursor: pointer;
-  background-color: #ffcec2;
   transform: scale(1.05);
 }
 
 /* Homepage content */
 
 #homeText {
-  margin-top: 170px;
+/*  margin-top: 170px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +126,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: 'Arial';
-  margin-left: 30px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
@@ -151,10 +139,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: monospace;
 }
 
 #homeTitle {
-  font-size: 75px;
+  font-size: 3rem;
   text-align: center;
   margin-top: 8vh;
   display: flex;
@@ -163,10 +152,11 @@
 
 #homeContent {
   text-align: center;
-  font-size: 25px;
+/*  font-size: 25px;*/
+  font-size: 1rem;
   font-weight: 300;
-  font-family:"Consolas";
-  color: darkgray;
+  font-family:monospace;
+  color: black;
   margin: 10px;
   
 }
@@ -174,8 +164,22 @@
 #buttons {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
+/*  margin-top: 20px;
+  margin-bottom: 20px;*/
+}
+
+@media (max-width: 630px) {
+  #buttons {
+    display: block !important
+  }
+  #homeFooterComponents {
+    display: block !important
+
+  }
+
+  #homeReact, #homeMarta {
+    margin-top: 30px;
+  }
 }
 
 #buttons p {
@@ -187,9 +191,9 @@
   width: 150px;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 800;
-  font-family:'Arial';
+  font-family:monospace;
   text-align: center;
   padding: 0;
   transition: 0.3s;
@@ -255,7 +259,6 @@
 }
 
 #reaction {
-  height: 32px;
   min-width: 120px;
 }
 
@@ -277,11 +280,11 @@
 }
 
 #topreact {
-  margin-left: 20px;
+/*  margin-left: 20px; */
 }
 
 #topmarta {
-  margin-left: 30px;
+/*  margin-left: 30px;*/
 }
 
 #homeReact img {
@@ -289,9 +292,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #logo {
+/*  #logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+  }*/
 }
 
 @keyframes App-logo-spin {
@@ -343,7 +346,7 @@
 #allTrains {
   display: flex;
   flex-direction: column;
-  max-height: 385px;
+/*  max-height: 385px;*/
   width: 600px;
   overflow-y: auto;
 }
@@ -522,6 +525,12 @@ li:hover {
   cursor: pointer;
 }
 
+#phtext {
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 1.5rem !important;
+}
+
 #east {
   margin-right: 7px;
   margin-left: 6px;
@@ -617,13 +626,59 @@ li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 900px;
-  height: 200px;
+  width: 70vh;
+  max-width: 500px;
+  height: 100px;
   border: 5px solid black;
   border-radius: 10px;
   transition: 0.3s;
-  margin: 35px;
+  margin: 20px;
   background-color: white;
+}
+
+#standing-str {
+  font-size: 10px;
+}
+
+#team-str {
+  white-space: nowrap;
+
+}
+
+@media (max-width: 680px) {
+  #player-card {
+    width: 50vh !important;
+    max-width: 500px !important;
+  }
+  #player-rank {
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 15px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #player-card {
+    width: 50vh !important;
+  }
+  #player-rank-numbers {
+    display: none !important;
+  }
+  .hl-pl {
+    display: none !important;
+  }
+}
+
+@media (max-width: 415px) {
+  #player-card {
+    width: 40vh !important;
+  }
+  #player-name {
+    font-size: 15px !important;
+  }
+  #team-str {
+    font-size: 10px !important;
+  }
 }
 
 #player-card:hover {
@@ -649,13 +704,14 @@ li:hover {
 
 #player-image {
   border-radius: 100%;
-  margin: 20px;
+/*  margin: 20px; */
   margin-bottom: 8px;
 }
 
 #player-percentile {
-  font-size: 25px;
+  font-size: 12.5px;
   font-weight: 600;
+/*  margin-bottom: 16px;*/
 }
 
 #player-text {
@@ -664,9 +720,11 @@ li:hover {
 }
 
 #player-name {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 10px;
+  white-space: nowrap;
+
+/*  padding: 10px;*/
 }
 
 #player-team {
@@ -679,11 +737,11 @@ li:hover {
   justify-content: center;
   border-radius: 5px;
   align-self: center;
-  margin: 10px;
+/*  margin: 10px;*/
 }
 
 #player-team-description {
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px;
 }
 
@@ -719,12 +777,12 @@ li:hover {
 }
 
 #player-rank {
-  width: 130px;
-  height: 130px;
+  width: 50px;
+  height: 50px;
   background-color: black;
   color: white;
   font-weight: 900;
-  font-size: 68px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -854,7 +912,7 @@ li:hover {
   align-items: center;
   padding: 80px;
   background-color: #FFF5BF; 
-  max-height: 66vh;
+/*  max-height: 66vh;*/
   min-height: 66vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -864,7 +922,7 @@ li:hover {
   border: 3px double black;
   margin-top: 10px;
   margin-bottom: 23px;
-  margin-left: 100px;
+/*  margin-left: 100px;*/
 }
 
 #PL-search-bar {
@@ -874,8 +932,8 @@ li:hover {
   max-width: 800px;
   height: 40px;
   border-radius: 12px;
-  position: absolute;
-  left: 34%;
+  height: 10px;
+  width: 500px;
 } 
 
 #PL-cant-find {
@@ -889,7 +947,7 @@ li:hover {
 }
 
 #WholeApp {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #whole-players-page h1 {

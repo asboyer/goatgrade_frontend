@@ -26,8 +26,8 @@ export default function TeamsPage() {
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{ width: '100%', padding: '10px', marginBottom: '20px' }}
         />
-        <div id="homeLinks">
-            <></>
+        <div id="homeLinks" class="hl-pl">
+            <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
         </div>
       </div>
       <div id="players-page-content">
@@ -35,15 +35,6 @@ export default function TeamsPage() {
         <div styles="align-self: center">
           <TeamsList searchTerm={searchTerm}/>
         </div>
-      </div>
-      <div id="Legend">
-        <h1>Ranking Percentiles</h1>
-        <p style={{ color: 'purple' }}>84% - 100%</p>
-        <p style={{ color: 'blue' }}>68% - 83%</p>
-        <p style={{ color: 'green' }}>51% - 67%</p>
-        <p style={{ color: 'gold' }}>34% - 50%</p>
-        <p style={{ color: 'orange' }}>18% - 33%</p>
-        <p style={{ color: 'red' }}>0% - 17%</p>
       </div>
     </div>
   );

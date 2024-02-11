@@ -17,10 +17,7 @@ export default function Home({setPropColor}) {
             {/* Heading */}
             <div id="homeHeading">
                 <div id="homeIcon">
-                    <img id="M" src={M} /> 
-                    <div id="homeMartaTracker">GOAT.grade()</div>
-                    <div id="homeAboutMe"><p onClick={() => {navigate("/about");}}>About Our Team</p>
-                    </div>
+                    <a href="/"> <img id="M" src={M} /></a> 
                 </div>
                 <div id="homeLinks">
                     <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
@@ -34,13 +31,13 @@ export default function Home({setPropColor}) {
                     <div id="toprow"> <div id="GOAT">GOAT</div>{".grade()"}</div> 
                 </div>
                 <div id="homeContent">
-                    Ranking the best NBA players and teams <br/> with cold hard data. Unbiased.
+                    ranking the best nba players and teams <br/> with cold. hard. data.
                 </div>
                 <div id="homeColorButtons">
                     <div id="buttons">
-                        <p id="redButton" onClick={() => {navigate("/playerspage");}}>Players</p>
-                        <p id="goldButton" onClick={() => {navigate("/mvppage");}}>MVP</p>
-                        <p id="greenButton" onClick={() => {navigate("/teamspage");}}>Teams</p>
+                        <p id="redButton" onClick={() => {navigate("/players");}}>Players</p>
+                        <p id="goldButton" onClick={() => {navigate("/mvp");}}>MVP</p>
+                        <p id="greenButton" onClick={() => {navigate("/teams");}}>Teams</p>
                     </div>
                 </div>
             </div>
@@ -50,14 +47,13 @@ export default function Home({setPropColor}) {
             <div id="homeFooter">
                 <div id="homeFooterComponents">
                     <div id="homeReact">
-                        <div id="topreact">Powered By</div> <div id="bottomreact"><img id="logo" src={logo} /><img id="reaction" src={reaction} /></div>
+                        <div id="topreact">powered by</div> <div id="bottomreact"><img id="reaction" src={reaction} /></div>
                     </div>
                     <div id="homeMarta">
-                        <div id="topmarta">Backed By</div> <div id="bottomreact"><img id="mart" src={BRI} /></div>
+                        <div id="topmarta">backed by</div> <div id="bottomreact"><a href="https://www.basketball-reference.com/"><img id="mart" src={BRI} /></a></div>
                     </div>
                 </div>
             </div>
-            <p id="madeBy">Made By Andrew Boyer, Daniel Ayoung-Chee, and Joshua Thomas for the 2024 Hacklytics</p>
         </div>
       );
 }
