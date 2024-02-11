@@ -23,22 +23,19 @@ export default function Player({ team }) { // Destructure team from props
     };
 
     return (
-        <div id="team-card" style={boxShadowStyle}>
+        <div id="player-card" style={boxShadowStyle}>
             <div id="team-info">
-                <img id="team-image" src={team.img} style={{ width: '80px', height: 'auto' }}/>
+                <img id="team-image" src={team.img} style={{ width: '55px', height: 'auto' }}/>
                 <div id="team-text">
-                    <div id="team-name">
+                    <div id="player-name">
                         {team.name}
                     </div>
-                    <div id="team-standing">
+                    <div id="player-team">
                         {team.standing}
                     </div>
                 </div>
             </div>
-            <div id="team-rank-numbers">
-                <div id="team-rank">
-                    {team.rank}
-                </div>
+            <div id="player-rank-numbers">
                 {
                     team.change < 0 ? (
                         <div id="player-rank-change-red"><img src={down} style={{ width: '15px', height: 'auto', marginTop: '5px' }}/>-{Math.abs(team.change)}</div>
@@ -46,6 +43,9 @@ export default function Player({ team }) { // Destructure team from props
                         <div id="player-rank-change-green"><img src={up} style={{ width: '15px', height: 'auto', marginTop: '5px' }}/>+{team.change}</div>
                     ) : <div id="player-rank-change-green">_</div>
                 }
+                <div id="player-rank">
+                    {team.rank}
+                </div>
             </div>
         </div>
     );

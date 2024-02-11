@@ -788,7 +788,7 @@ li:hover {
 #player-rank-change-green {
   margin: 5px;
   padding: 2.5px;
-  
+
 }
 }
 
@@ -831,13 +831,12 @@ li:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
 }
 
 #team-image {
   border-radius: 100%;
   margin: 20px;
-  margin-bottom: 8px;
+/*  margin-bottom: 8px;*/
 }
 
 #team-percentile {
@@ -912,6 +911,7 @@ li:hover {
 .hh {
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 /**
@@ -928,7 +928,7 @@ li:hover {
 }
 
 #PL-container {
-  padding-top: 95px !important;
+  padding-top: 80px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -948,7 +948,7 @@ li:hover {
 }
 
 #PL-search-bar {
-  margin: 20px;
+/*  margin: 20px;*/
   padding: 15px;
   font-size: 20px;
   max-width: 800px;
@@ -970,6 +970,11 @@ li:hover {
 
 #WholeApp {
   overflow: scroll;
+}
+
+#last-updated {
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 #whole-players-page h1 {
