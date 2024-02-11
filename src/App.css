@@ -172,9 +172,13 @@
   #buttons {
     display: block !important
   }
-  #homeFooterComponents {
+  #homeFooter {
     display: none !important
   }
+
+#homeBody {
+  overflow: hidden;
+}
 
   #homeReact, #homeMarta {
     margin-top: 30px;
