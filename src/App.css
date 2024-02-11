@@ -253,7 +253,6 @@
   font-weight: 300px;
   margin-top: 20px;
   font-size: 20px;
-  margin-left: 20px;
 }
 
 #mart {
@@ -272,9 +271,9 @@
  align-items: center;
  padding-bottom: 0px;
  height: 80px;
+ width: 200px;
  align-self: center;
 }
-
 
 
 #bottomreact {
