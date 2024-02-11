@@ -51,7 +51,7 @@
 #M, #git, #linkedIn {
   width: 20px;
   margin: 15px;
-  margin-left: 25px;
+/*  margin-left: 25px;*/
   transition: 0.3s;
   border: 2px solid gray;
   padding: 8px;

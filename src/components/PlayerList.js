@@ -28,7 +28,7 @@ export default function PlayerList({ searchTerm }) {
 
     useEffect(() => {
         const filtered = data.filter(player =>
-            player.name.toLowerCase().includes(searchTerm.toLowerCase())
+            player.name.toLowerCase().includes(searchTerm.toLowerCase()) || player.team.toLowerCase().includes(searchTerm.toLowerCase()) || player.team_name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setFilteredData(filtered);
     }, [searchTerm, data]);
