@@ -9,21 +9,21 @@ import playerDisplay from "./playerDisplay.png"
 
 
 
-export default function Home({setPropColor}) {
+export default function About({setPropColor}) {
     const navigate = useNavigate();
     return (
         <div id="aboutBody">
 
             {/* Heading */}
-            <div id="aboutHeading">
+            <div id="homeHeading">
                 <div id="homeIcon">
                     <img id="M" src={M} /> 
                     <div id="homeMartaTracker">GOAT.grade()</div>
-                    <div id="homeAboutMe"><p onClick={() => {navigate("/");}}>Back Home</p>
+                    <div id="homeAboutMe"><p onClick={() => {navigate("/");}}>Go Back</p>
                     </div>
                 </div>
                 <div id="homeLinks">
-                    <a href="https://github.com/DanielChee/gg_fronted" target="none"><img id="git" src={git} /> </a>
+                    <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
                 </div>
             </div>
 

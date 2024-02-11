@@ -23,7 +23,9 @@ export default function PlayersPage() {
           type="text"
           id="PL-search-bar"
           placeholder="Search players..."
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            setSearchTerm(e.target.value)
+          }}
           style={{ width: '100%', padding: '10px', marginBottom: '20px' }}
         />
         <div id="homeLinks">
@@ -37,14 +39,15 @@ export default function PlayersPage() {
         </div>
       </div>
       <div id="Legend">
-        <h1>Ranking Percentiles</h1>
-        <p styles="color: purple">84% - 100%</p>
-        <p styles="color: blue">68% - 83%</p>
-        <p styles="color: green">51% - 67%</p>
-        <p styles="color: yellow">34% - 50%</p>
-        <p styles="color: orange">18% - 33%</p>
-        <p styles="color: red">0% - 17%</p>
+        <h1>Grade Range</h1>
+        <p style={{ color: 'purple' }}>94 - 100</p>
+        <p style={{ color: 'blue' }}>89 - 94</p>
+        <p style={{ color: 'green' }}>80 - 89</p>
+        <p style={{ color: 'gold' }}>70 - 80</p>
+        <p style={{ color: 'orange' }}>60 - 70</p>
+        <p style={{ color: 'red' }}>0 - 60</p>
       </div>
+
     </div>
   );
 }

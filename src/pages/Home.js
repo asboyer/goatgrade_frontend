@@ -19,7 +19,7 @@ export default function Home({setPropColor}) {
                 <div id="homeIcon">
                     <img id="M" src={M} /> 
                     <div id="homeMartaTracker">GOAT.grade()</div>
-                    <div id="homeAboutMe"><p onClick={() => {navigate("/about");}}>About</p>
+                    <div id="homeAboutMe"><p onClick={() => {navigate("/about");}}>About Our Team</p>
                     </div>
                 </div>
                 <div id="homeLinks">

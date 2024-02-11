@@ -36,6 +36,15 @@ export default function TeamsPage() {
           <TeamsList searchTerm={searchTerm}/>
         </div>
       </div>
+      <div id="Legend">
+        <h1>Ranking Percentiles</h1>
+        <p style={{ color: 'purple' }}>84% - 100%</p>
+        <p style={{ color: 'blue' }}>68% - 83%</p>
+        <p style={{ color: 'green' }}>51% - 67%</p>
+        <p style={{ color: 'gold' }}>34% - 50%</p>
+        <p style={{ color: 'orange' }}>18% - 33%</p>
+        <p style={{ color: 'red' }}>0% - 17%</p>
+      </div>
     </div>
   );
 }
