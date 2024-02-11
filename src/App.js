@@ -23,7 +23,6 @@ function App() {
         <Route index element={<Home/>} />
           <Route path={"players"} element={<PlayersPage/>} />
           <Route path={"teams"} element={<TeamsPage/>} />
-          <Route path={"mvp"} element={<MvpPage />} />
         </Routes>
     </BrowserRouter>
     </div>

@@ -36,7 +36,6 @@ export default function Home({setPropColor}) {
                 <div id="homeColorButtons">
                     <div id="buttons">
                         <p id="redButton" onClick={() => {navigate("/players");}}>Players</p>
-                        <p id="goldButton" onClick={() => {navigate("/mvp");}}>MVP</p>
                         <p id="greenButton" onClick={() => {navigate("/teams");}}>Teams</p>
                     </div>
                 </div>
