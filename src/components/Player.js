@@ -39,7 +39,7 @@ export default function Player({ player }) {
                     <div id="player-team">
                         <div id="player-team-image">
 
-                            <img src={player.team_img} style={{ width: '20px', height: 'auto' }}/>
+                            <img src={player.team_img} style={{ width: '25px', height: 'auto' }}/>
                         </div>
                         <div id="player-team-description">
                             <span id="team-str">{player.team}</span> <br/> <span id="standing-str">{player.team_standing_string}</span>
