@@ -173,8 +173,7 @@
     display: block !important
   }
   #homeFooterComponents {
-    display: block !important
-
+    display: none !important
   }
 
   #homeReact, #homeMarta {
@@ -664,6 +663,10 @@ li:hover {
   #player-card {
     width: 50vh !important;
   }
+  #PL-search-bar {
+    width: 300px !important;
+    margin-right: 15px;
+  }
 /*  #player-rank-numbers {
     display: none !important;
   }*/
@@ -754,6 +757,7 @@ li:hover {
   justify-content: flex-end;
   align-items: flex-start;
 }
+
 
 #player-rank-change-green {
   display: flex;
@@ -866,6 +870,21 @@ li:hover {
   align-self: flex-start;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+@media (max-width: 680px) {
+#team-rank-numbers {
+  align-self: flex-end;
+}
+#player-name {
+  white-space: normal !important;
+  font-size: .8rem;
+}
+
+#player-info {
+  margin-left: 0px !important;
+}
+
 }
 
 #team-rank-change-green {
