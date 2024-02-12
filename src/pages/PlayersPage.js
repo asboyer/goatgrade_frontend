@@ -27,7 +27,7 @@ export default function PlayersPage() {
           }}
         />
                 <div id="homeLinks" class="hl-pl">
-                    <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
+                    <a href="https://github.com/asboyer/goatgrade_frontend" target="none"><img id="git" src={git} /> </a>
                 </div>
       </div>
       <div id="players-page-content">

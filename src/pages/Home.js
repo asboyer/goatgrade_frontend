@@ -20,7 +20,7 @@ export default function Home({setPropColor}) {
                     <a href="/"> <img id="M" src={M} /></a> 
                 </div>
                 <div id="homeLinks">
-                    <a href="https://github.com/DanielChee/gg_frontend" target="none"><img id="git" src={git} /> </a>
+                    <a href="https://github.com/asboyer/goatgrade_frontend" target="none"><img id="git" src={git} /> </a>
                 </div>
             </div>
 
