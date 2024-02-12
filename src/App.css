@@ -667,6 +667,9 @@ li:hover {
       height: 30px !important;
       font-size: 15px !important;
   }
+#standing-str {
+  display: none;
+}
 /*  #player-rank-numbers {
     display: none !important;
   }*/
