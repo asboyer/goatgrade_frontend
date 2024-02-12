@@ -7,7 +7,9 @@
 
 /* HomePage */
 
-
+#root {
+  width: 100%;
+}
 
 #homeHeading {
   display: flex;
@@ -36,10 +38,7 @@
 }
 
 #homeBody {
-  overflow: scroll;
-  font-family: monospace;
-  flex-direction: column;
-  justify-content: space-between;
+
   min-height: 100vh;
   background-color: #ffe8cf;
 }
@@ -64,13 +63,13 @@
   transform: scale(1.1);
 }
 
-#homeMartaTracker {
+/*#homeMartaTracker {
   border-right: 2px solid #895800;
   margin-right: 20px;
   padding: 20px;
   padding-right: 30px;
   padding-left: 15px;
-}
+}*/
 
 #homeIcon {
   display: flex;
@@ -143,11 +142,20 @@
 }
 
 #homeTitle {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
+}
+
+@media(max-width: 700px) {
+  #homeTitle {
+    font-size: 2.5rem;
+  }
+  #homeContent {
+    font-size: .75rem !important;
+  }
 }
 
 #homeContent {
@@ -385,7 +393,7 @@ Train.js train components
   font-family: "Roboto slab";
   font-weight: 900;
   font-size: 40px;
-  margin-right: 5px;
+/*  margin-right: 5px;*/
 }
 
 #letter-location h1 {
@@ -404,6 +412,7 @@ Train.js train components
   flex-direction: row;
   justify-content: flex-start;
 }
+
 
 #GOLD {
   background-color: rgb(157, 135, 6);
@@ -992,7 +1001,6 @@ li:hover {
 }
 
 #WholeApp {
-  overflow: scroll;
 }
 
 #last-updated {
